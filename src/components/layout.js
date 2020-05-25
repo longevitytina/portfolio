@@ -1,6 +1,8 @@
 import React from "react"
 import Header from "./Header"
 import Projects from "./Projects/components/Projects"
+import ContactForm from "./ContactForm"
+
 
 export default function Layout({ children }) {
     return (
@@ -8,6 +10,7 @@ export default function Layout({ children }) {
             <Header />
             {children}
             <Projects />
+            <ContactForm />
         </div>
     )
 }
