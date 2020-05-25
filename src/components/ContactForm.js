@@ -2,26 +2,26 @@ import React, { useState } from "react"
 import { navigate } from "gatsby-link"
 
 export default function ContactForm() {
-  const [state, setState] = useState({})
+  // const [state, setState] = useState({})
 
-  const handleChange = e => {
-    setState({ ...state, [e.target.name]: e.target.value })
-  }
+  // const handleChange = e => {
+  //   setState({ ...state, [e.target.name]: e.target.value })
+  // }
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: {
-        "form-name": form.getAttribute("contact"),
-        ...state,
-      },
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error))
-  }
+  // const handleSubmit = e => {
+  //   e.preventDefault()
+  //   const form = e.target
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: {
+  //       "form-name": form.getAttribute("contact"),
+  //       ...state,
+  //     },
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error))
+  // }
 
   return (
     <div>
@@ -31,35 +31,35 @@ export default function ContactForm() {
         action="/thanks/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
 
         <p hidden>
           <label>
             Don’t fill this out:
-            <input name="bot-field" onChange={handleChange} />
+            <input name="bot-field" />
           </label>
         </p>
         <p>
           <label>
             Your name:
             <br />
-            <input type="text" name="name" onChange={handleChange} />
+            <input type="text" name="name" />
           </label>
         </p>
         <p>
           <label>
             Your email:
             <br />
-            <input type="email" name="email" onChange={handleChange} />
+            <input type="email" name="email" />
           </label>
         </p>
         <p>
           <label>
             Message:
             <br />
-            <textarea name="message" onChange={handleChange} />
+            <textarea name="message" />
           </label>
         </p>
         <p>
