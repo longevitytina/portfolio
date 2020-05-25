@@ -3,21 +3,22 @@ import React from "react"
 export default function ContactForm() {
     return (
         <div>
-            <form method="post" action="#">
+            <form method="post" data-netlify="true" >
+                <input type="hidden" name="form-name" value="contact" />
                 <label>
-                    Name
+                    Name:
           <input type="text" name="name" id="name" />
                 </label>
                 <label>
-                    Email
+                    Email:
           <input type="email" name="email" id="email" />
                 </label>
                 <label>
-                    Subject
+                    Subject:
           <input type="text" name="subject" id="subject" />
                 </label>
                 <label>
-                    Message
+                    Message:
           <textarea name="message" id="message" rows="5" />
                 </label>
                 <button type="submit">Send</button>
