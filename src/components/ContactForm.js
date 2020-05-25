@@ -1,37 +1,30 @@
-import React, { useState } from "react"
-import { navigate } from "gatsby-link"
+import React from "react"
+// import alert from "react-alert-template-mui"
 
 export default function ContactForm() {
-  // const [state, setState] = useState({})
-
-  // const handleChange = e => {
-  //   setState({ ...state, [e.target.name]: e.target.value })
-  // }
-
-  // const handleSubmit = e => {
-  //   e.preventDefault()
-  //   const form = e.target
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: {
-  //       "form-name": form.getAttribute("contact"),
-  //       ...state,
+  // alert.show("Thanks for Submitting!", {
+  //   actions: [
+  //     {
+  //       copy: "Back to website",
+  //       onClick: reset,
   //     },
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error))
-  // }
+  //   ],
+  // })
+
+  const reset = function () {
+    document.getElementById("contact").reset()
+  }
 
   return (
     <div>
+      <h2>Get in touch!</h2>
       <form
+        id="contact"
         name="contact"
         method="post"
-        action="/thanks/"
+        action={reset}
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        // onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
 
