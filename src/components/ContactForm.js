@@ -15,11 +15,11 @@ export default function ContactForm() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: {
-        "form-name": form.getAttribute("name"),
+        "form-name": form.getAttribute("contact"),
         ...state,
       },
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => alert("Success!"))
       .catch(error => alert(error))
   }
 
@@ -34,6 +34,7 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
+
         <p hidden>
           <label>
             Don’t fill this out:
