@@ -10,8 +10,7 @@ const Header = () => (
       <img src={avatar} className={headerStyles.avatar} alt="" />
       <h1 className={headerStyles.description}>
         <strong>Hi! I'm Tina</strong>, your friendly neighborhood developer,
-        <br />
-        artist, entrepuner, and friend.
+        artist, entrepreneur, and friend.
         <br />
         Let's connect!
       </h1>
