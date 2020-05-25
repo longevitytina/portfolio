@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { navigate } from "gatsby-link"
 
 export default function ContactForm() {
   const [state, setState] = useState({})
@@ -13,10 +14,10 @@ export default function ContactForm() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
+      body: {
         "form-name": form.getAttribute("name"),
         ...state,
-      }),
+      },
     })
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
