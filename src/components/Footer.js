@@ -3,6 +3,7 @@ import styles from "./Footer.module.css"
 import "../../src/fontawesome"
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
+import { FaMailBulk } from "react-icons/fa"
 
 const Footer = () => (
   <div>
@@ -26,8 +27,9 @@ const Footer = () => (
       </li>
 
       <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-        <a href="#" className="icon fa-envelope-o">
-          <span className="label">Email</span>
+        <a href="#contact" className="icon fa-envelope-o">
+          <span className="label"></span>
+          <FaMailBulk />
         </a>
       </li>
     </ul>
