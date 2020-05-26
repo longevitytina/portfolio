@@ -44,10 +44,7 @@ export default function ContactForm() {
         <input type="hidden" name="form-name" value="contact" />
 
         <p hidden>
-          <label>
-            Don’t fill this out:
-            <input name="bot-field" />
-          </label>
+          <input name="bot-field" />
         </p>
         <div className="row">
           <div className="col">
@@ -62,7 +59,6 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="form-group">
-          <label for="Textarea1"></label>
           <textarea
             className="form-control"
             id="ControlTextarea1"
