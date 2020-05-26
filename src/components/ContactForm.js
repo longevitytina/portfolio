@@ -17,7 +17,7 @@ export default function ContactForm() {
 
   return (
     <div style={{ margin: `30px` }}>
-      <h2>Get in touch!</h2>
+      <h2 style={{ textAlign: `center` }}>Get in touch!</h2>
       <form
         style={{ margin: `10px` }}
         id="contact"
@@ -35,30 +35,27 @@ export default function ContactForm() {
             <input name="bot-field" />
           </label>
         </p>
-        <p>
-          <label>
-            Your name:
-            <br />
-            <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your email:
-            <br />
-            <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:
-            <br />
-            <textarea name="message" />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+        <div className="row">
+          <div className="col">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="First name"
+            />
+          </div>
+          <div className="col">
+            <input type="email" className="form-control" placeholder="Email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Textarea1"></label>
+          <textarea
+            class="form-control"
+            id="ControlTextarea1"
+            rows="3"
+            placeholder="Message"
+          ></textarea>
+        </div>
       </form>
     </div>
   )
