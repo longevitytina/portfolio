@@ -61,15 +61,18 @@ export default function ContactForm() {
             <input type="email" className="form-control" placeholder="Email" />
           </div>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="Textarea1"></label>
           <textarea
-            class="form-control"
+            className="form-control"
             id="ControlTextarea1"
             rows="3"
             placeholder="Message"
           ></textarea>
         </div>
+        <button type="submit" className="btn btn-secondary btn-block">
+          Submit
+        </button>
       </form>
     </div>
   )

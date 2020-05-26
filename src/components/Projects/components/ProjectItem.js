@@ -1,6 +1,6 @@
 import React from "react"
-import styling from "./ProjectItem.module.css"
 import { Button } from "react-bootstrap"
+import styling from "./ProjectItem.module.css"
 
 export default function ProjectItem({ source, link }) {
   return (
