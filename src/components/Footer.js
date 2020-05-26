@@ -6,8 +6,12 @@ import { FaMailBulk } from "react-icons/fa"
 
 const Footer = () => (
   <div>
-    <ul style={{ listStyle: `none`, float: `left` }}>
-      <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    <ul style={{ listStyle: `none`, textAlign: `center` }}>
+      <li
+        style={{
+          marginRight: `1rem`,
+        }}
+      >
         <a
           href="https://www.linkedin.com/in/tina-taylor-codes/"
           className="fab fa-linkedin"
@@ -17,7 +21,7 @@ const Footer = () => (
           </span>
         </a>
       </li>
-      <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+      <li style={{ marginRight: `1rem` }}>
         <a href="https://github.com/longevitytina" className="icon fa-github">
           <span className="label">
             <FaGithub />
@@ -25,7 +29,7 @@ const Footer = () => (
         </a>
       </li>
 
-      <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+      <li style={{ marginRight: `1rem` }}>
         <a href="#contact" className="icon fa-envelope-o">
           <span className="label"></span>
           <FaMailBulk />

@@ -7,7 +7,7 @@ const projects = DEFAULT_PROJECTS
 export default function Projects() {
   return (
     <div style={{ marginTop: `80px`, marginLeft: `30px` }}>
-      <h2>Recent Projects</h2>
+      <h2 style={{ textAlign: `center` }}>Recent Projects</h2>
       <div
         className="tiles"
         style={{
