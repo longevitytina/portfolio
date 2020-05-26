@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react"
 
-import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import Footer from "./Footer"
+import avatar from "../assets/images/avatar.jpg"
 import headerStyles from "./Header.module.css"
 
 const Header = () => (
   <div>
     <div className={headerStyles.header}>
       <img src={avatar} className={headerStyles.avatar} alt="" />
-      <h1 className={headerStyles.description}>
+      <h3 className={headerStyles.description}>
         <strong>Hi! I'm Tina</strong>, your friendly neighborhood developer,
         artist, entrepreneur, and friend.
         <br />
         Let's connect!
-      </h1>
+      </h3>
     </div>
     <Footer />
   </div>
