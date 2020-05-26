@@ -19,7 +19,8 @@ export default function ContactForm() {
     <div
       style={{
         padding: `10px`,
-        backgroundColor: `rgba(147, 141, 141, 0.536)`,
+        backgroundColor: `rgba(212, 210, 213, 0.913)`,
+
         boxShadow: `8px 4px 8px 10px rgba(0, 0, 0, 0.2), 20px 6px 20px 0 rgba(0, 0, 0, 0.19)`,
       }}
     >

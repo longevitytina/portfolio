@@ -1,3 +1,6 @@
 body {
-  background-color: rgb(186, 143, 143);
+  background-image: url("../assets/images/cactus2.png");
+  background-repeat: space;
+  background-size: 12%;
+  background-color: rgba(196, 178, 188);
 }
