@@ -16,9 +16,10 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
+    <div style={{ margin: `30px` }}>
       <h2>Get in touch!</h2>
       <form
+        style={{ margin: `10px` }}
         id="contact"
         name="contact"
         method="post"
