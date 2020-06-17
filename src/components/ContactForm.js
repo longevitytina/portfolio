@@ -2,15 +2,6 @@ import React from "react"
 // import alert from "react-alert-template-mui"
 
 export default function ContactForm() {
-  // alert.show("Thanks for Submitting!", {
-  //   actions: [
-  //     {
-  //       copy: "Back to website",
-  //       onClick: reset,
-  //     },
-  //   ],
-  // })
-
   const reset = function () {
     document.getElementById("contact").reset()
   }
