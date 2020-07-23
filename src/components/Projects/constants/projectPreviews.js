@@ -1,7 +1,7 @@
 import wayfarer from "../../../assets/images/projectPreview/Wayfarer.png"
 import massageify from "../../../assets/images/projectPreview/Massageify.png"
 import cvwellness from "../../../assets/images/projectPreview/CVWellness.png"
-import wasteland from "../../../assets/images/projectPreview/ZWasteland.png"
+import wasteland from "../../../assets/images/projectPreview/Wasteland.png"
 import ALiAS from "../../../assets/images/projectPreview/ALiAS.png"
 
 export const DEFAULT_PROJECTS = [
