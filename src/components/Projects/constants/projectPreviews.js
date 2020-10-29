@@ -3,9 +3,14 @@ import massageify from "../../../assets/images/projectPreview/Massageify.png"
 import cvwellness from "../../../assets/images/projectPreview/CVWellness.png"
 import wasteland from "../../../assets/images/projectPreview/Wasteland.png"
 import ALiAS from "../../../assets/images/projectPreview/ALiAS.png"
-import Majors from "../../../assets/images/projectPreview/ALiAS.png"
+import Majors from "../../../assets/images/projectPreview/Majors.png"
 
 export const DEFAULT_PROJECTS = [
+  {
+    id: "6",
+    source: Majors,
+    link: "robert-majors.netlify.app",
+  },
   {
     id: "5",
     source: ALiAS,
@@ -30,10 +35,5 @@ export const DEFAULT_PROJECTS = [
     id: "4",
     source: wasteland,
     link: "https://zombie-wasteland.herokuapp.com/",
-  },
-  {
-    id: "5",
-    source: Majors,
-    link: "robert-majors.netlify.app",
   },
 ]
